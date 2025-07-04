@@ -1,7 +1,7 @@
 services:
-  marcus7i:
-    image: ghcr.io/marcus7i/marcus7i.net
-    container_name: marcus7i
+  hatsura:
+    image: ghcr.io/hatsuraide/hatsura.dev
+    container_name: hatsura
     restart: unless-stopped
     ports:
       - "9031:3000"

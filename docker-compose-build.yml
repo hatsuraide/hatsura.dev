@@ -1,9 +1,9 @@
 services:
-  marcus7i:
+  hatsura:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: marcus7i
+    container_name: hatsura
     restart: unless-stopped
     ports:
       - "9031:3000"
