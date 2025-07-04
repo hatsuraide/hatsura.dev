@@ -1,15 +1,15 @@
 ---
 title: 'About'
-description: 'about page of marcus7i.net'
+description: 'about page of hatsura.dev'
 ---
 
-# About hatsuraide.Net
+# About Hatsura
 
-This site hosts multiple services and applications, mostly self-made, some improved by me (hatsuraide)
+This site hosts multiple services and applications, mostly self-made, some improved by me (Hatsura)
 
 ## Donations
 
-You can support me by donating to my [Patreon](https://patreon.com/marcus7i).
+You can support me by donating to my [Patreon](https://patreon.com/hatsura).
 
 ## Contact
 
