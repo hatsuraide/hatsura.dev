@@ -25,9 +25,9 @@ export default defineNuxtConfig({
   
   app: {
     head: {
-      title: 'hatsuraide.Net',
+      title: 'Hatsura',
       meta: [
-        { name: 'description', content: 'The official site for hatsuraide.Net' }
+        { name: 'description', content: 'The official site for Hatsura.dev' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
