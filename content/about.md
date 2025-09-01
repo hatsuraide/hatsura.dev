@@ -9,7 +9,7 @@ This site hosts multiple services and applications, mostly self-made, some impro
 
 ## Donations
 
-You can support me by donating to my [Patreon](https://patreon.com/hatsura).
+You can support me by donating to my [Patreon](https://patreon.com/hatsura) or [SellApp](https://hatsura.sell.app)
 
 ## Contact
 
