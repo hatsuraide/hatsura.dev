@@ -1,7 +1,10 @@
 services:
-  hatsura:
+  hatsuradev:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: ghcr.io/hatsuraide/hatsura.dev
-    container_name: hatsura
+    container_name: hatsuradev
     restart: unless-stopped
     ports:
       - "9031:3000"
