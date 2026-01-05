@@ -64,10 +64,10 @@
 
 <script setup>
 useHead({
-  title: 'Hatsura'
-})
+  title: 'Hatsura',
+});
 
-const { config } = useSiteConfig()
+const { config } = useSiteConfig();
 </script>
 
 <style>
