@@ -97,7 +97,7 @@ useHead({
   title: 'Contact - Hatsura',
 });
 
-const { config } = useSiteConfig();
+const { config } = useSiteLinks();
 
 const schema = z.object({
   email: z
