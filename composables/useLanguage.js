@@ -6,8 +6,8 @@ export const useLanguage = () => {
     const hostname = requestURL.hostname;
 
     // Check for Japanese domain (both IDN and Punycode)
-    // ハツラ.みんな converts to xn--eckq7fg8cygsa1a1je.xn--q9jyb4c
-    if (hostname === 'ハツラ.みんな' || hostname === 'xn--eckq7fg8cygsa1a1je.xn--q9jyb4c') {
+    // ハツラ.みんな converts to xn--bdkva3f.xn--q9jyb4c
+    if (hostname === 'ハツラ.みんな' || hostname === 'xn--bdkva3f.xn--q9jyb4c') {
       return 'ja';
     }
     
@@ -21,7 +21,7 @@ export const useLanguage = () => {
     
     return {
       en: `https://hatsura.dev${pathname}`,
-      ja: `https://xn--eckq7fg8cygsa1a1je.xn--q9jyb4c${pathname}`,
+      ja: `https://xn--bdkva3f.xn--q9jyb4c${pathname}`,
       default: `https://hatsura.dev${pathname}`
     };
   };
