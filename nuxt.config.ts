@@ -1,3 +1,5 @@
+import type { SitemapUrlInput } from "@nuxtjs/sitemap";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -23,9 +25,43 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Hatsura',
-      meta: [{ name: 'description', content: 'The official site for Hatsura.dev' }],
+      meta: [
+        { name: 'description', content: 'The official site for Hatsura.dev' },
+        { property: 'og:site_name', content: 'Hatsura' },
+        { property: 'og:type', content: 'website' }
+      ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
+  },
+
+  site: {
+    url: 'https://hatsura.dev',
+  },
+
+  sitemap: {
+    xslColumns: [
+      { label: 'URL', width: '50%' },
+      { label: 'Last Modified', select: 'sitemap:lastmod', width: '25%' },
+      { label: 'Priority', select: 'sitemap:priority', width: '12.5%' },
+      { label: 'Change Frequency', select: 'sitemap:changefreq', width: '12.5%' }
+    ],
+    urls: async () => {
+      const pages = ['/', '/projects', '/hire', '/contact'];
+      const urls: SitemapUrlInput[] | PromiseLike<SitemapUrlInput[]> | { loc: string; alternatives: { hreflang: string; href: string; }[]; }[] = [];
+      
+      pages.forEach(page => {
+        urls.push({
+          loc: page,
+          alternatives: [
+            { hreflang: 'en', href: `https://hatsura.dev${page}` },
+            { hreflang: 'ja', href: `https://xn--eckq7fg8cygsa1a1je.xn--q9jyb4c${page}` },
+            { hreflang: 'x-default', href: `https://hatsura.dev${page}` }
+          ]
+        });
+      });
+      
+      return urls;
+    }
   },
 
   ui: {
